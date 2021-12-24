@@ -52,8 +52,8 @@ jobs:
 
             - name: Install package for Deploy Action
               run: |
-                  apt-get update
-                  apt-get install -y rsync
+                  apk update
+                  apk add rsync
 
             - name: Deploy to GitHub Pages
               uses: JamesIves/github-pages-deploy-action@4.1.8
