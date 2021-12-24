@@ -1,6 +1,6 @@
 = Asciidoctor Jet
 Harsh Kapadia
-v0.1.0
+v0.1.1
 :author:    Harsh Kapadia
 :toc:       left
 :favicon:   ./static/img/favicon.ico
