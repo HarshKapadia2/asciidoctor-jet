@@ -50,6 +50,11 @@ jobs:
                   # Run buildscript
                   ./build.sh
 
+            - name: Install package for Deploy Action
+              run: |
+                  apt-get update
+                  apt-get install -y rsync
+
             - name: Deploy to GitHub Pages
               uses: JamesIves/github-pages-deploy-action@4.1.8
               with:
