@@ -1,9 +1,9 @@
 
 <br>
 
-<p align="center"><img width ="12%" src="./src/static/img/icon-512.png"></p>
+<p align="center"><img width ="14%" src="./src/static/img/icon-512.png"></p>
 
-<i><h3 align="center">Asciidoctor Jet</h3></i>
+<h3 align="center"><i>Asciidoctor Jet</i></h3>
 
 <br>
 
@@ -18,33 +18,35 @@
 <p align="center">
   <b><a href="https://harshkapadia2.github.io/asciidoctor-jet">Explore the docs »</a></b>
 </p>
+
 <p align="center">
   <a href="https://harshkapadia2.github.io/asciidoctor-jet/#_live_demos">View Live Demos</a>
     &nbsp; · &nbsp; 
   <a href="https://harshkapadia2.github.io/asciidoctor-jet/#_getting_started">Getting Started</a>
     &nbsp; · &nbsp; 
   <a href="https://github.com/HarshKapadia2/asciidoctor-jet/generate">Use this template</a>
-  
 </p>
 
 <br>
 
 ### File Structure
 
+The main content of the website resides in the [`src` directory](src).
+
 ```
 src
- ┣ content
- ┃ ┗ adding-content.adoc
- ┣ static
- ┃ ┣ css
- ┃ ┣ img
- ┃ ┗ js
- ┣ docinfo-footer.html
- ┣ docinfo.html
- ┣ index.adoc
- ┣ manifest.webmanifest
- ┣ robots.txt
- ┗ service-worker.js
+├───content
+│   └───adding-content.adoc
+├───static
+│   ├───css
+│   ├───img
+│   └───js
+├───docinfo-footer.html
+├───docinfo.html
+├───index.adoc
+├───manifest.webmanifest
+├───robots.txt
+└───service-worker.js
 ```
 
 ### Changelogs
