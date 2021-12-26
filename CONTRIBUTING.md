@@ -25,6 +25,16 @@
     -   Solve one issue per PR, without any extra changes.
     -   Include extra changes in a separate PR.
 
+## Version Change Checklist
+
+Make sure the following changes are made when releasing a new version
+
+-   Update the [changelog](CHANGELOG.md) with the appropriate version number and changes.
+    -   Refer to the [Keep a Changelog website](https://keepachangelog.com/en/1.0.0) for instructions.
+-   Update the version in the [service worker](src/service-worker.js). (On line number 1.)
+-   Update the version in the [index.adoc](src/index.adoc) file. (On line number 3.)
+-   Create an annotated tag (`git tag -a vx.x.x -m "Release vx.x.x"`) on the latest commit of that release.
+
 ## Further Help
 
 If any further help is needed, do not hesitate to contact the author ([Harsh Kapadia](https://harshkapadia.me)) via Twitter [@harshgkapadia](https://twitter.com/harshgkapadia), [LinkedIn](https://www.linkedin.com/in/harshgkapadia) or e-mail ([contact@harshkapadia.me](mailto:contact@harshkapadia.me)). An [issue](https://github.com/HarshKapadia2/asciidoctor-jet/issues) can be raised as well.
