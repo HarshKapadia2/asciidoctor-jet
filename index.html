@@ -483,7 +483,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h1>Asciidoctor Jet</h1>
 <div class="details">
 <span id="author" class="author">Harsh Kapadia</span><br>
-<span id="revnumber">version 0.1.1</span>
+<span id="revnumber">version 0.1.2</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -496,6 +496,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_getting_started">Getting Started</a></li>
 <li><a href="#_adding_content">Adding Content</a></li>
 <li><a href="#_serving_the_site_locally">Serving the Site Locally</a></li>
+<li><a href="#_file_structure">File Structure</a></li>
 </ul>
 </li>
 <li><a href="#_contributing">Contributing</a></li>
@@ -619,7 +620,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><a href="https://asciidoctor.org/#installation" target="_blank" rel="noopener">Install Asciidoctor.</a></p>
 </li>
 <li>
-<p><a href="https://github.com/HarshKapadia2/asciidoctor-jet" target="_blank" rel="noopener">Use the template.</a></p>
+<p><a href="https://github.com/HarshKapadia2/asciidoctor-jet" target="_blank" rel="noopener">Use this template.</a></p>
+</li>
+<li>
+<p>Explore the <a href="#_file_structure">file structure</a>.</p>
 </li>
 <li>
 <p><a href="#_adding_content">Add content.</a></p>
@@ -631,7 +635,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><a href="#_serving_the_site_locally">Serve the built site locally</a> to check if all is good.</p>
 </li>
 <li>
-<p>Push to GitHub and a workflow should automatically build and commit files to the 'gh-pages' branch, which can be deployed using GitHub Pages.</p>
+<p>Push to GitHub and a workflow should automatically build and commit files to the <code>gh-pages</code> branch, which can be deployed using GitHub Pages.</p>
 </li>
 </ul>
 </div>
@@ -644,14 +648,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><a href="https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference" target="_blank" rel="noopener">Asciidoctor syntax</a> is supported.</p>
 </li>
 <li>
-<p>The <code>index.adoc</code> file is the entry point for Asciidoctor.</p>
+<p>Explore the default <a href="#_file_structure">file structure of the template</a>.</p>
 </li>
 <li>
 <p>Create a file in the <code>content</code> directory and include it in <code>index.adoc</code> using the <code>include::path/to/file.adoc[]</code> <a href="https://docs.asciidoctor.org/asciidoc/latest/directives/include" target="_blank" rel="noopener">include directive</a>.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Feel free to customize the project structure as per needs, but make sure to make corresponding changes to the <a href="https://github.com/HarshKapadia2/asciidoctor-jet/blob/main/.github/workflows/build-website.yaml" target="_blank" rel="noopener"><code>.github/workflows/build-website.yaml</code> file</a> in the repository, so that GitHub Actions is able to build and deploy the website properly.</p>
+<p>Feel free to customize the project structure as per needs, but make sure to make corresponding changes to the <a href="https://github.com/HarshKapadia2/asciidoctor-jet/blob/main/.github/workflows/build-deploy-website.yaml" target="_blank" rel="noopener"><code>.github/workflows/build-deploy-website.yaml</code> file</a> in the repository, so that GitHub Actions is able to build and deploy the website properly.</p>
 </li>
 </ul>
 </div>
@@ -705,6 +709,32 @@ $ http-server build</code></pre>
 <p>If in VS Code, the <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank" rel="noopener">Live Server extension</a> can be used.</p>
 </li>
 </ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_file_structure"><a class="anchor" href="#_file_structure"></a>File Structure</h3>
+<div class="paragraph">
+<p>The main content of the website resides in the <a href="https://github.com/HarshKapadia2/asciidoctor-jet/tree/main/src" target="_blank" rel="noopener"><code>src</code> directory</a> and the entry point for Asciidoctor is the <a href="https://github.com/HarshKapadia2/asciidoctor-jet/blob/main/src/index.adoc" target="_blank" rel="noopener"><code>index.adoc</code> file</a> in the <code>src</code> directory.</p>
+</div>
+<div class="paragraph">
+<p>The default structure of the <code>src</code> directory</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">src
+├───content
+│   └───adding-content.adoc
+├───static
+│   ├───css
+│   ├───img
+│   └───js
+├───docinfo-footer.html
+├───docinfo.html
+├───index.adoc
+├───manifest.webmanifest
+├───robots.txt
+└───service-worker.js</code></pre>
+</div>
 </div>
 </div>
 </div>
