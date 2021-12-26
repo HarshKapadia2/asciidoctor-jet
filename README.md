@@ -21,26 +21,6 @@
 </p>
 <br />
 
-### File Structure
-
-The main content of the website resides in the [`src` directory](src).
-
-```
-src
-├───content
-│   └───adding-content.adoc
-├───static
-│   ├───css
-│   ├───img
-│   └───js
-├───docinfo-footer.html
-├───docinfo.html
-├───index.adoc
-├───manifest.webmanifest
-├───robots.txt
-└───service-worker.js
-```
-
 ### Changelogs
 
 The changelog has been maintained in the [`CHANGELOG.md` file](CHANGELOG.md).

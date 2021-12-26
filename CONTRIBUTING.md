@@ -13,9 +13,7 @@
 -   Fork this repo. (Top right corner.)
 -   Clone the forked repo using the [`git clone` command](https://harshkapadia2.github.io/git_basics/#_git_clone).
 -   `cd` into the cloned repo directory.
--   Install [Asciidoctor](https://asciidoctor.org/#installation).
--   Run the command `sh build.sh` in the root directory of the project to build the site to the `build` directory.
--   [Serve the built site locally](https://harshkapadia2.github.io/asciidoctor-jet/#_serving_the_site_locally) to check if all is good.
+-   Follow the [Getting Started guide](https://harshkapadia2.github.io/git_basics/#_getting_started) on the demo site and explore other sections to understand how the template is structured.
 -   Write meaningful commit messages and include the number (#) of the issue being resolved (if any) at the end of the commit message.
 
     Example: `:bug: fix: Resolve 'isCorrect' function error (#0)`

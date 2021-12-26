@@ -1,6 +1,6 @@
 = Asciidoctor Jet
 Harsh Kapadia
-v0.1.1
+v0.1.2
 :author:    Harsh Kapadia
 :toc:       left
 :favicon:   ./static/img/favicon.ico
@@ -50,11 +50,12 @@ NOTE: link:https://github.com/HarshKapadia2/asciidoctor-jet/issues[Raise an issu
 === Getting Started
 
 * link:https://asciidoctor.org/#installation[Install Asciidoctor.^]
-* link:https://github.com/HarshKapadia2/asciidoctor-jet[Use the template.^]
+* link:https://github.com/HarshKapadia2/asciidoctor-jet[Use this template.^]
+* Explore the link:#_file_structure[file structure].
 * link:#_adding_content[Add content.]
 * Run the command `sh build.sh` in the root directory of the project to build the site to the `build` directory.
 * link:#_serving_the_site_locally[Serve the built site locally] to check if all is good.
-* Push to GitHub and a workflow should automatically build and commit files to the 'gh-pages' branch, which can be deployed using GitHub Pages.
+* Push to GitHub and a workflow should automatically build and commit files to the `gh-pages` branch, which can be deployed using GitHub Pages.
 
 === Adding Content
 
@@ -79,6 +80,28 @@ $ http-server build
 ----
 
 * If in VS Code, the link:https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer[Live Server extension^] can be used.
+
+=== File Structure
+
+The main content of the website resides in the link:https://github.com/HarshKapadia2/asciidoctor-jet/tree/main/src[`src` directory^] and the entry point for Asciidoctor is the link:https://github.com/HarshKapadia2/asciidoctor-jet/blob/main/src/index.adoc[`index.adoc` file^] in the `src` directory.
+
+The default structure of the `src` directory
+
+```
+src
+├───content
+│   └───adding-content.adoc
+├───static
+│   ├───css
+│   ├───img
+│   └───js
+├───docinfo-footer.html
+├───docinfo.html
+├───index.adoc
+├───manifest.webmanifest
+├───robots.txt
+└───service-worker.js
+```
 
 == Contributing
 
