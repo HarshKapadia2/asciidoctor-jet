@@ -483,7 +483,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h1>Asciidoctor Jet</h1>
 <div class="details">
 <span id="author" class="author">Harsh Kapadia</span><br>
-<span id="revnumber">version 0.1.2</span>
+<span id="revnumber">version 0.1.3</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -549,6 +549,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li>
 <p>First load theme depends on the browser theme and if toggled, is thereafter set as per user preference.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Lazy loading of images</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://caniuse.com/mdn-html_elements_img_loading" target="_blank" rel="noopener">Subject to browser support.</a></p>
 </li>
 </ul>
 </div>
@@ -684,31 +694,57 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>After running the <code>sh build.sh</code> command, the site is built out to the <code>build</code> directory. It has to be served from there.</p>
 </div>
 <div class="paragraph">
-<p>There are various ways to serve file locally</p>
+<p>There are various ways to serve file locally. <strong>Run any of the following commands from the root directory of the project.</strong></p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Using the <a href="https://www.npmjs.com/package/http-server" target="_blank" rel="noopener"><code>http-server</code> NPM package</a> is preferred.</p>
+<p>Using the NPM package <a href="https://www.npmjs.com/package/http-server" target="_blank" rel="noopener"><code>http-server</code></a> is preferred.</p>
 </li>
 </ul>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">$ npx http-server build
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">$ npx http-server "build"
 
 # OR
 
 $ npm install --global http-server
-$ http-server build</code></pre>
+$ http-server "build"</code></pre>
 </div>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>If in VS Code, the <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank" rel="noopener">Live Server extension</a> can be used.</p>
+<p>The NPM package <a href="https://www.npmjs.com/package/serve" target="_blank" rel="noopener"><code>serve</code></a> can be used.</p>
 </li>
 </ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">$ npx serve "build"
+
+# OR
+
+$ npm install --global serve
+$ serve "build"</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The Python module <a href="https://docs.python.org/3/library/http.server.html" target="_blank" rel="noopener"><code>http.server</code></a> can also be used.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">$ python -m http.server
+
+# OR
+
+$ python3 -m http.server # python&lt;version&gt; -m http.server</code></pre>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -721,7 +757,7 @@ $ http-server build</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-none hljs">src
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">src
 ├───content
 │   └───adding-content.adoc
 ├───static
@@ -754,7 +790,10 @@ $ http-server build</code></pre>
 <p>Go through the <a href="https://github.com/HarshKapadia2/asciidoctor-jet/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener"><code>CONTRIBUTING.md</code> file</a> for local development environment setup instructions.</p>
 </li>
 <li>
-<p>Feel free to <a href="https://links.harshkapadia.me" target="_blank" rel="noopener">contact the maintainer</a> for any issues.</p>
+<p>Feel free to <a href="https://github.com/HarshKapadia2/asciidoctor-jet/blob/main/CONTRIBUTING.md#further-help" target="_blank" rel="noopener">contact the maintainer</a> for any issues.</p>
+</li>
+<li>
+<p>Check the <a href="https://github.com/HarshKapadia2/asciidoctor-jet/blob/main/CHANGELOG.md" target="_blank" rel="noopener">changelog</a> for changes in particular versions.</p>
 </li>
 </ul>
 </div>
@@ -772,7 +811,6 @@ $ http-server build</code></pre>
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/languages/shell.min.js"></script>
 <script>
 if (!hljs.initHighlighting.called) {
   hljs.initHighlighting.called = true
@@ -782,7 +820,7 @@ if (!hljs.initHighlighting.called) {
 <div id="footer">
 	Created using
 	<a
-		href="https://github.com/HarshKapadia2/asciidoctor-jet"
+		href="https://harshkapadia2.github.io/asciidoctor-jet"
 		target="_blank"
 		rel="noreferrer"
 		><i>Asciidoctor Jet</i></a
