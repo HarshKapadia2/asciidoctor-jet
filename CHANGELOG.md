@@ -4,6 +4,32 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.3] - 2021-12-29
+
+### Added
+
+-   A line in `index.adoc` on the **existing** image lazy loading feature.
+    -   This feature existed since v0.1.0, but was not documented.
+-   The NPM package `serve` and the Python module `http.server` to the 'Serving the Site Locally' sub-section.
+-   A [`clean: true` option](https://github.com/marketplace/actions/deploy-to-github-pages#:~:text=No-,clean,-You%20can%20use) in the `build-deploy-website.yaml` workflow Deploy job.
+    -   `clean` is `true` by default, so this addition is just to explicitly state that the feature is enabled.
+-   A link to the Changelog in `index.adoc`.
+
+### Fixed
+
+-   The footer text colour in light mode. (Issue [#5](https://github.com/HarshKapadia2/asciidoctor-jet/issues/5))
+-   The 'no language' Highlight.js console warning for the code block in the 'File Structure' section.
+
+### Changed
+
+-   The link to _Asciidoctor Jet_ in the footer (`docinfo-footer.html`) to the template itself rather than the GitHub repo.
+-   The link to contact the maintainer in `index.adoc`.
+
+### Removed
+
+-   The `:highlightjs-languages:` document attribute because the required `shell` language is already included in the base version.
+-   The [VS Code Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) from the 'Serving the Site Locally' sub-section due to issues with the service worker.
+
 ## [0.1.2] - 2021-12-26
 
 ### Added
