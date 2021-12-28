@@ -29,6 +29,8 @@ link:#_getting_started[Getting started] is very straightforward!
 		*** Dark mode (Jet black)
 		*** Light mode
 	** First load theme depends on the browser theme and if toggled, is thereafter set as per user preference.
+* Lazy loading of images
+	** link:https://caniuse.com/mdn-html_elements_img_loading[Subject to browser support.^]
 * Fonts
 	** Montserrat
 	** PT Mono (Only for code snippets.)
@@ -108,7 +110,8 @@ src
 * Contributors are welcome!
 * For any bugs or feature requests/modifications, feel free to link:https://github.com/HarshKapadia2/asciidoctor-jet/issues[raise an issue^] if it hasn't already been raised.
 * Go through the link:https://github.com/HarshKapadia2/asciidoctor-jet/blob/main/CONTRIBUTING.md[`CONTRIBUTING.md` file^] for local development environment setup instructions.
-* Feel free to link:https://links.harshkapadia.me[contact the maintainer^] for any issues.
+* Feel free to link:https://github.com/HarshKapadia2/asciidoctor-jet/blob/main/CONTRIBUTING.md#further-help[contact the maintainer^] for any issues.
+* Check the link:https://github.com/HarshKapadia2/asciidoctor-jet/blob/main/CHANGELOG.md[changelog^] for changes in particular versions.
 
 '''
 
