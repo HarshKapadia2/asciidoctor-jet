@@ -67,21 +67,42 @@ include::./content/adding-content.adoc[]
 
 After running the `sh build.sh` command, the site is built out to the `build` directory. It has to be served from there.
 
-There are various ways to serve file locally
+There are various ways to serve file locally. **Run any of the following commands from the root directory of the project.**
 
-* Using the link:https://www.npmjs.com/package/http-server[`http-server` NPM package^] is preferred.
+* Using the NPM package link:https://www.npmjs.com/package/http-server[`http-server`^] is preferred.
 
 [source, shell]
 ----
-$ npx http-server build
+$ npx http-server "build"
 
 # OR
 
 $ npm install --global http-server
-$ http-server build
+$ http-server "build"
 ----
 
-* If in VS Code, the link:https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer[Live Server extension^] can be used.
+* The NPM package link:https://www.npmjs.com/package/serve[`serve`^] can be used.
+
+[source, shell]
+----
+$ npx serve "build"
+
+# OR
+
+$ npm install --global serve
+$ serve "build"
+----
+
+* The Python module link:https://docs.python.org/3/library/http.server.html[`http.server`^] can also be used.
+
+[source, shell]
+----
+$ python -m http.server
+
+# OR
+
+$ python3 -m http.server # python<version> -m http.server
+----
 
 === File Structure
 
