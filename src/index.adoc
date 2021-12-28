@@ -110,7 +110,8 @@ The main content of the website resides in the link:https://github.com/HarshKapa
 
 The default structure of the `src` directory
 
-```
+[source, shell]
+----
 src
 ├───content
 │   └───adding-content.adoc
@@ -124,7 +125,7 @@ src
 ├───manifest.webmanifest
 ├───robots.txt
 └───service-worker.js
-```
+----
 
 == Contributing
 
