@@ -32,10 +32,10 @@ link:#_getting_started[Getting started] is very straightforward!
 	** link:https://caniuse.com/mdn-html_elements_img_loading[Subject to browser support.^]
 * Fonts
 	** Montserrat
-	** PT Mono (Only for code snippets.)
+	** PT Mono (Only for `code snippets`.)
 * Back to top button
 * Custom scrollbar
-* The repository includes a link:https://github.com/HarshKapadia2/asciidoctor-jet/blob/main/.github/workflows/build-website.yaml[workflow to build and deploy the site^] on GitHub Pages.
+* The repository includes a link:https://github.com/HarshKapadia2/asciidoctor-jet/tree/main/.github/workflows[workflow to build and deploy the site^] on GitHub Pages.
 
 == Live Demos
 
