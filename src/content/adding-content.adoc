@@ -5,4 +5,4 @@
 * Images can be added using the link:https://docs.asciidoctor.org/asciidoc/latest/macros/images[image macro^].
 	** Example:
 
-image::icon-192.png[]
+image::icon-192.png[192, 192, alt="Asciidoctor Jet Logo"]
