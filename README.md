@@ -18,6 +18,9 @@
   <a href="https://harshkapadia2.github.io/asciidoctor-jet/#_live_demos">Live Demos</a>
   &nbsp;&nbsp;·&nbsp;&nbsp;
   <a href="https://harshkapadia2.github.io/asciidoctor-jet/#_getting_started">Getting Started</a>
+  <br />
+  <br />
+  <a href="https://github.com/HarshKapadia2/asciidoctor-jet/releases/latest"><img src="https://img.shields.io/github/v/release/HarshKapadia2/asciidoctor-jet?label=Asciidoctor%20Jet&color=blue" /></a>
 </p>
 <br />
 
