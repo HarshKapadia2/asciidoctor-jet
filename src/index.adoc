@@ -1,18 +1,18 @@
 = Asciidoctor Jet
 Harsh Kapadia
-v0.1.3
-:author:    Harsh Kapadia
-:toc:       left
-:favicon:   ./static/img/favicon.ico
-:imagesdir: ./static/img
-:icons:     image
-:iconsdir:	./static/img/admonition_icons
-:docinfo:   shared
+v0.1.4
+:author:				Harsh Kapadia
+:toc:					left
+:favicon:				./static/img/favicon.ico
+:imagesdir:				./static/img
+:icons:					image
+:iconsdir:				./static/img/admonition_icons
+:docinfo:				shared
+:source-highlighter:	highlight.js
+:highlightjsdir:		./static/highlight
+:highlightjs-theme:		github-light-dark
 :sectanchors:
 :figure-caption!:
-:source-highlighter: highlight.js
-:highlightjsdir: ./static/highlight
-:highlightjs-theme: github-light-dark
 :nofooter:
 
 == About
