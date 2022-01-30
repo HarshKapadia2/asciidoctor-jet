@@ -1,6 +1,6 @@
 = Asciidoctor Jet
 Harsh Kapadia
-v0.1.4
+v0.1.5
 :author:				Harsh Kapadia
 :toc:					left
 :favicon:				./static/img/favicon.ico
@@ -44,9 +44,13 @@ link:#_getting_started[Getting started] is very straightforward!
 Sites using the _Asciidoctor Jet_ template
 
 * link:https://harshkapadia2.github.io/git_basics[git_basics^]
-* link:https://catchup.ourtech.community/summary[OTC CatchUp summary^]
+* link:https://catchup.ourtech.community/summary[OTC CatchUp Summary^]
 
-NOTE: link:https://github.com/HarshKapadia2/asciidoctor-jet/issues[Raise an issue^] on the repository to be featured here! (Please add a link to the site.)
+[NOTE]
+====
+* link:https://github.com/HarshKapadia2/asciidoctor-jet/issues[Raise an issue^] on the repository to be featured here! (Please add a link to the site.)
+* Make sure to add the `asciidoctor-jet` label/topic to the site's repository for visibility!
+====
 
 == Using Asciidoctor Jet
 
